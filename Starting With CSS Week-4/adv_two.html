@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Super advanced</title>
+    <style>
+        /* you can choose either after or before */
+        h1::after{
+            content: "After";
+            color: #a52a2a;
+        }
+        h2::first-letter{
+            font-size: 50px;
+        }
+        p::first-line{
+            background-color: #7aa4f1;
+        }
+    </style>
+</head>
+<body>
+    <h1>Pseudo before and after selecter</h1>
+    <h2>First letter Selecter</h2>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+        Voluptatum distinctio mollitia molestias adipisci maxime 
+        modi assumenda, at expedita ipsa. Perspiciatis.</p>
+</body>
+</html>

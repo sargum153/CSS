@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Direction</title>
+    <style>
+        .container{
+            border: 1px solid black;
+            display: flex;
+            /* flex-direction: column; */
+            /* flex-direction: row; */
+            flex-direction: row-reverse;
+            flex-direction: column-reverse;
+        }
+        .item{
+            height: 50px;
+            width: 50px;
+            background-color: blue;
+            color: aliceblue;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+        <div class="item">Item 4</div>
+    </div>
+</body>
+</html>

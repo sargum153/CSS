@@ -1,0 +1,133 @@
+<!-- Basic Advance Selecter in CSS
+CSS Specificity and Cascading Order
+
+Inline Specificity
+ID
+Class
+Element selecter -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selecter</title>
+    <style>
+        /* *(astrict one selecter) means everything or select universial selecter */
+        * { 
+            margin: 0;
+            padding: 0;
+        }
+
+        /* . we will use for class we class */
+        .bg-red {
+            background-color: #fa5d5d;
+        }
+
+        /* eleement selecter */
+        h2 {
+            background-color: blue;
+            color: #eaeaf4;
+        }
+
+        /* For i'd we will uae #(pound sign) */
+        #bg-orange {
+            background-color: #1f8787;
+        }
+
+        a {
+            background-color: #2ad538;
+            padding: 5px;
+        }
+
+        a[target]{
+            /* a[target=_blank]{ we can use value also like this */
+            background-color: #2ad538;
+            padding: 5px;
+        }
+
+        h3, h4 {
+            /* if we want to add anchor tag a then we can write 
+            h3, h4, a {
+
+            } */
+            background-color: black;
+            color: white;
+        }
+
+        ul li {
+            background-color: #9ebb6c;
+        }
+    </style>
+</head>
+<body>
+    <h1>Lorem ipsum dolor sit amet consectetur.</h1>
+    <h2>Lorem ipsum dolor sit amet consectetur.</h2>
+    <h2>Lorem ipsum dolor sit amet.</h2>
+    <h1 id="bg-orange" class="bg-red">Lorem ipsum dolor sit amet, consectetur adipisicing.</h1>
+    <h2 id="bg-orange">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</h2>
+    <a href="https://pwskills.com">pw skills</a>
+    <a href="https://iNeuron.com">iNeuron</a>
+    <!-- Now we will go and mention some target like below -->
+    <a target="_blank" href="https://iNeuron.com">iNeuron</a>
+
+    <h3>Lorem ipsum dolor sit amet consectetur adipisicing.</h3>
+    <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos!</h4>
+
+    <ul>
+        <li>One</li>
+        <li>Two</li>
+    </ul>
+    <li>Three</li>
+</body>
+</html>
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Specificity</title>
+    <style>
+        /* #id1{
+            color: blueviolet;
+        }
+
+        body{
+            color: red;
+        }
+        h1{
+            color: blue;
+        } */
+
+        .html{
+            color: crimson;
+        }
+        .CSS {
+            color: black;
+        }
+        .css1 {
+            color: aqua;
+        }
+        
+        
+    </style>
+</head>
+<body>
+    <h1 id="id1" class="CSS css1 html">Lorem ipsum dolor sit amet.</h1>
+   
+</body>
+</html>
+
+
+p { color: blue; }                  /* specificity: 1 */
+.myClass { color: red; }            /* specificity: 10 */
+#myElement { color: green; }        /* specificity: 100 */ -->
+
+

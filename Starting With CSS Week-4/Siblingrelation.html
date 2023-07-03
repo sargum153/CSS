@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Child Sibling Relation selector</title>
+
+    <style>
+        header > a {
+            background-color: blue;
+        }
+        /* h1 ~ p {
+            background-color: chartreuse; 
+        }
+        h1 + p {
+            background-color: #a15926;
+        }
+        h1 + a {
+            background-color: blueviolet;
+        }
+        img ~ p {
+            background-color: #0fdb0f;
+        } */
+
+        img + p {
+            background-color: hotpink;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="#">Google</a>
+        <nav>
+            <ul>
+                <li>Logo</li>
+            </ul>
+            <a href="#">Yahoo</a>
+        </nav>
+    </header>
+    <div>
+        <img src="" alt="">
+        <h1>test h1</h1>
+        <h2>test h2</h2>
+        <p>This is a paragraph</p>
+        <p>hi</p>
+    </div>
+</body>
+</html>
+
+<!-- h1 ~ p :- h1 main jo bhi siblings p hai sab ko select karega
+
+h1 + p :- h1 main jo 1st siblings p hai usko swlect karega -->

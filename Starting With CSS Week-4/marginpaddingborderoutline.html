@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=h1, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* h1{
+            background-color: black;
+            color: #c7dbeb;
+             margin: 200px;
+             margin is outside
+            padding is inside
+            padding: 200px;
+            } */
+        /* .elementTwo{
+            margin: 10px 20px 30px 40px;
+            margin-top: 5px;
+            margin-bottom: 20px;
+        } */
+        /* Margin collapse:- highest margin will be taking */
+        /* .elementTwo{
+            margin-top: 50px;
+        }
+        .elementOne{
+            margin-bottom: 40px;
+        } */
+
+        /* .boxTwo{
+            padding: 30px 20px 40px 50px;
+            border: solid;   
+        } */
+
+       
+
+        /* .dotted{
+            border-style: solid;
+            border-width: 4px;
+            border-color: red;
+            border-radius: 10px:
+        }
+
+     border-radius: 10px 20px;
+        .mixup{
+            border-top-style: dashed;
+            border-right-style: dotted;
+            border-bottom-style: solid;
+            border-left-style: inset;
+        }
+
+        .groove{
+            border: groove 5px #eb2ece;
+        } */
+
+        .offset{
+            margin: 3rem;
+            outline-color: blue;
+            outline-offset: 10px;
+            outline-style: solid;
+            border-style: solid;
+        }
+        input{
+            /* outline: none; */
+            outline-offset: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Lorem ipsum dolor sit amet consectetur.</h1>
+
+    <div class="elementOne">Element 1</div>
+    <div class="elementTwo">Element 2</div>
+    <div class="elementThree">Element 3</div>
+
+
+    <div class="boxOne">
+        <h1 class="heading">padding 1</h1>
+    </div>
+    <div class="boxTwo">
+        <h1 class="heading">padding 2</h1>
+    </div>
+    <div class="boxThree">
+        <h1 class="heading">padding 3</h1>
+    </div>
+
+
+    <div class="none">none</div>
+    <div class="solid">solid</div>
+    <div class="dotted">dotted</div>
+    <div class="dashed">dashed</div>
+    <div class="double">double</div>
+    <div class="groove">groove</div>
+    <div class="ridge">ridge</div>
+    <div class="inset">inset</div>
+    <div class="outset">outset</div>
+    <div class="mixup">dashed, dotted, solid,and inset</div>
+
+    <input type="text">
+
+    <div class="offset">Outline</div>
+</body>
+</html>

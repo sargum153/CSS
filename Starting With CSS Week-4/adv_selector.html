@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adv_ selector_Median</title>
+    <style>
+        h1{
+            background-color: #fa2a4d;
+        }
+        h1:hover{
+            background-color: blue;
+        }
+        button:focus{
+            color: blueviolet;
+        }
+        input:required {
+            background-color: burlywood;
+        }
+        input:disabled {
+            background-color: aqua;
+        }
+        /* div{
+            background-color: #6ef46e;
+        }
+        if u want to style for only 1st child then put below prpperty and for last chile div{last-chile
+        div:first-child{
+            background-color: darkred;
+        }
+        for :nth-child() we can write 1 for 1st chile, 2 for 2nd chile , 3 for 3rd chile, and 2n-1 for 1st and 3rd chile, 2n for all chile */
+        div:nth-child(2n-1){
+            background-color: darkorange;
+        }
+    </style>
+</head>
+<body>
+    <h1>Hover</h1>
+    <button>Focus</button>
+    <input type="text" required="true" />
+    <input type="checkbox" />
+    <input type="text" disabled="true"/>
+    <div>
+        <div>One</div>
+        <div>Two</div>
+        <div>Three</div>
+    </div>
+</body>
+</html>
